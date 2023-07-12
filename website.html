@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Links</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .left-background {
+      width: 50%;
+      height: 100vh;
+      background: linear-gradient(90deg, #f7347a, #ff8c00, #ffc800, #00ff00, #007fff, #8b00ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-background {
+      background-color: rgb(50, 50, 50);
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-background">
+    <h1>If you're gay, click here!</h1>
+    <button onclick="goMyWebsite()">Your are gay</button>
+  </div>
+  <div class="right-background">
+    <h1>If you're not gay, click here!</h1>
+    <button onclick="goMyWebsite2()">Your not gay</button>
+  </div>
+
+  <script>
+    function goMyWebsite() {
+      window.location.href = "file:///C:/Users/atomi/OneDrive/Desktop/website%20second%20part.html";
+    }
+
+    function goMyWebsite2() {
+      window.location.href = "file:///C:/Users/atomi/OneDrive/Desktop/Website%20third%20part.html";
+    }
+  </script>
+</body>
+</html>
